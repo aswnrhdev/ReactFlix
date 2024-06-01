@@ -26,6 +26,3 @@ To get started with this project, follow these steps:
 
 Contributions to this project are welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, feel free to submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
