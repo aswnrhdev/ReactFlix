@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+import logo from "../assets/Netflix_Logo_PMS.png";
 
 const Navbar = () => {
   const { user, logOut } = UserAuth();
@@ -17,14 +18,12 @@ const Navbar = () => {
 
   return (
     <div className="absolute w-full p-4 flex items-center justify-between z-50">
-      <Link to="/">
-        <h1 className="uppercase text-red-600 font-nsans-bold cursor-pointer text-5xl">
-          netflix
-        </h1>
+      <Link to="/" className="ml-8">
+        <img src={logo} alt="Netflix Logo" className="h-20 w-38" />
       </Link>
 
       {user?.email ? (
-        <div>
+        <div className="flex items-center mr-8">
           <Link to="/profile">
             <button className="capitalize pr-4">profile</button>
           </Link>
@@ -36,7 +35,7 @@ const Navbar = () => {
           </button>
         </div>
       ) : (
-        <div>
+        <div className="flex items-center mr-8">
           <Link to="/login">
             <button className="capitalize pr-4">Login</button>
           </Link>
