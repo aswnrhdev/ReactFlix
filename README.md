@@ -1,4 +1,4 @@
-# Netflix-inspired Web Application
+# Netflix-inspired
 
 Welcome to the Netflix-inspired web application repository! This project showcases a modern web application built using React.js, Firebase for backend services, and Tailwind CSS for sleek styling.
 
